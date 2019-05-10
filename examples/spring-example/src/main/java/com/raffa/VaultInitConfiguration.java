@@ -41,8 +41,8 @@ public class VaultInitConfiguration implements InitializingBean {
 
 	private Log log = LogFactory.getLog(VaultInitConfiguration.class);
 
-	@Value("${vault.token.file:/var/run/secrets/vaultproject.io}")
-	String secretFile;
+	//@Value("${vault.token.file:/var/run/secrets/vaultproject.io}")
+	String secretFile = "/var/run/secrets/kubernetes.io/serviceaccount/token";
 
 	@Value("${vault.cacert:/var/run/secrets/kubernetes.io/serviceaccount/service-ca.crt}")
 	String vaultCaFile;
