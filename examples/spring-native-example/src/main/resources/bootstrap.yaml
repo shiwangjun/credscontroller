@@ -2,7 +2,7 @@ spring.application.name: spring-native-example
 spring.cloud.vault:
     generic:
         enabled: false
-    host: vault-vault-controller.192.168.64.2.nip.io
+    host: vault.vault-controller.svc
     port: 8200
     scheme: https
     authentication: KUBERNETES
